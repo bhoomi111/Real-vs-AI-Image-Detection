@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <img src="{{ file_url }}" alt="Uploaded Image" width="300">
+    <p>The image is classified as: <strong>{{ "Fake" if is_fake else "Real" }}</strong></p>
+    <a href="/">Upload another image</a>
+</body>
+</html>
