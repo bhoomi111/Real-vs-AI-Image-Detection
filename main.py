@@ -7,13 +7,13 @@ import numpy as np
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-# Dataset paths
-real_path = "data/train/REAL"
-fake_path = "data/train/FAKE"
+# # Dataset paths
+# real_path = "data/train/REAL"
+# fake_path = "data/train/FAKE"
 
-# Dataset reduction
-reduce_dataset(real_path, 'data/train1/REAL_reduced', num_images=5000)
-reduce_dataset(fake_path, 'data/train1/FAKE_reduced', num_images=5000)
+# # Dataset reduction
+# reduce_dataset(real_path, 'data/train1/REAL_reduced', num_images=5000)
+# reduce_dataset(fake_path, 'data/train1/FAKE_reduced', num_images=5000)
 
 # Load reduced datasets
 real_images, real_labels = load_images('data/train1/REAL_reduced', label=0)
