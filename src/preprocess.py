@@ -4,19 +4,19 @@ import shutil
 import numpy as np
 import cv2
 
-def reduce_dataset(source_dir, dest_dir, num_images=5000):
-    if not os.path.exists(dest_dir):
-        os.makedirs(dest_dir)
+# def reduce_dataset(source_dir, dest_dir, num_images=5000):
+#     if not os.path.exists(dest_dir):
+#         os.makedirs(dest_dir)
 
-    all_images = os.listdir(source_dir)
-    sampled_images = random.sample(all_images, num_images)
+#     all_images = os.listdir(source_dir)
+#     sampled_images = random.sample(all_images, num_images)
 
-    for img in sampled_images:
-        img_path = os.path.join(source_dir, img)
-        dest_img_path = os.path.join(dest_dir, img)
-        shutil.copy(img_path, dest_img_path)
+#     for img in sampled_images:
+#         img_path = os.path.join(source_dir, img)
+#         dest_img_path = os.path.join(dest_dir, img)
+#         shutil.copy(img_path, dest_img_path)
 
-    print(f"Reduced dataset to {num_images} images and saved to {dest_dir}")
+#     print(f"Reduced dataset to {num_images} images and saved to {dest_dir}")
 
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import os
